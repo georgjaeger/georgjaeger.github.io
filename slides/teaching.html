@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Slides</title>
+
+		<meta name="description" content="Slides">
+		<meta name="author" content="Georg Jäger">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!--<link rel="stylesheet" href="css/theme/black.css" id="theme">-->
+		<!--<link rel="stylesheet" href="css/theme/white.css" id="theme">-->
+	  <!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/gj.css" id="theme">
+		<!--<link rel="stylesheet" href="css/theme/serif.css" id="theme">-->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="gfx/title.png" data-background-size= contain>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p style="font-size:medium; ">Slides available at <a href=http://www.jaeger-ge.org/now>www.jaeger-ge.org/now</a> or <a href=http://www.jaeger-ge.org/slides/syssci2_7.html>jaeger-ge.org/slides/syssci2_7.html</a></p>
+<img class=plain style= "position:absolute;left:170px;"src="gfx/qr.png" width="170" height ="auto">
+				</section>
+
+
+					<section  data-background="gfx/footer.png" data-background-size= contain>
+
+
+						<h3>Motivation</h3>
+
+
+
+				 	<p> <b>Fundamental challenge</b> of sustainability: <br>
+						People need to invest in something that benefits everyone,<br>
+						but investing has <b>disadvantages</b> for them personally.
+					  </p>
+						<table>
+				<tr><td>	<img class=plain src="gfx/motiv.png" width="600" height ="auto"></td>
+						<td><p class = fragment> How can we solve this problem? <br>
+							How can models help us?</p></td></tr>
+</table>
+
+
+
+						</section>
+<section  data-background="gfx/footer.png" data-background-size= contain>
+					<h3>Outline</h3>
+
+
+
+			 	<p class=fragment> <img class= "plain" style="vertical-align:middle" src="gfx/agent.png" height="50" width="auto"> Recap: Agent-based modeling  </p>
+
+					<p class=fragment><img class= "plain" style="vertical-align:middle" src="gfx/earth.png" height="50" width="auto"> Stable Climate as a Public Good Game  </p>
+
+					<p class=fragment> <img class= "plain" style="vertical-align:middle" src="gfx/abm.png" height="50" width="auto"> Making a Public Good Game Model </p>
+
+
+					</section>
+
+					<section  data-background="gfx/footer.png" data-background-size= contain >
+					<h3>Outline</h3>
+
+
+				   <p class = "fragment grow"><img class= "plain" style="vertical-align:middle" src="gfx/agent.png" height="50" width="auto"><b> Recap: Agent-based modeling</b> </p>
+
+					<p> <img class= "plain" style="vertical-align:middle" src="gfx/earth.png" height="50" width="auto"> Stable Climate as a Public Good Game </p>
+
+					<p> <img class= "plain" style="vertical-align:middle" src="gfx/abm.png" height="50" width="auto"> Making a Public Good Game Model </p>
+
+					</section>
+
+					<section  data-background="gfx/footer.png" data-background-size= contain >
+					<h3> The Core Idea of ABM</h3>
+<br/>
+
+
+<ul style="font-size:1.2em;">
+<li> Describe a system starting from its <b>components</b> </li>
+<li> Use <b>rules</b> for their actions and interactions </li>
+<li> <b>System state</b> originates from aggregation </li>
+</ul>
+
+<img class= "plain" src="gfx/agents.png" height="150" width="auto">
+
+					</section>
+
+					<section data-markdown data-background="gfx/footer.png" data-background-size= contain >
+					### Advantages  of ABM
+- We can investigate both **micro** and **macro**-scale
+- Sometimes **rules** are easier to find than equations
+- Flexibility
+- Complexity emerges naturally
+					</section>
+
+
+<section data-markdown data-background="gfx/footer.png" data-background-size= contain >
+### ABM-suitability
+
+Which systems are **suitable** for agent-based modeling?
+
+- many **interacting** agents
+- agents act **independently**
+- dynamic is determined by **micro-scale**
+
+
+</section>
+
+
+
+<section   data-background="gfx/footer.png" data-background-size= contain >
+<h3>Outline</h3>
+
+
+<p><img class= "plain" style="vertical-align:middle" src="gfx/agent.png" height="50" width="auto"> Recap: Agent-based modeling </p>
+
+<p class = "fragment grow"> <img class= "plain" style="vertical-align:middle" src="gfx/earth.png" height="50" width="auto"><b> Stable Climate as a Public Good Game</b> </p>
+
+<p> <img class= "plain" style="vertical-align:middle" src="gfx/abm.png" height="50" width="auto"> Making a Public Good Game Model </p>
+
+</section>
+
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3> What is a Public Good (PG)?</h3>
+&nbsp;<br/>
+
+ <table>
+
+  <tr>
+    <td></td>
+    <td> Excludable</td>
+    <td>Non-excludable</td>
+  </tr>
+  <tr>
+    <td>Rivalrous</td>
+    <td class = fragment background = "gfx/car1.png" style="background-size: auto 100%;background-repeat: no-repeat; background-position: center; " >Private Good</td>
+    <td class = fragment background = "gfx/fish.png" style="background-size: auto 100%;background-repeat: no-repeat; background-position: center; " >Common-pool resource  </td>
+  </tr>
+	<tr>
+		<td>Non-rivalrous</td>
+		<td class = fragment background = "gfx/cinema.png" style="background-size: auto 100%;background-repeat: no-repeat; background-position: center; " > Club Good</td>
+		<td class = fragment background = "gfx/green1.png" style="background-size: auto 100%;background-repeat: no-repeat; background-position: center; " ><b>Public Good</b></td>
+	</tr>
+</table>
+
+</section>
+
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+	<h3> Examples for Public Goods</h3>
+	<ul>
+	<li class=fragment>A stable <b>climate</b></li>
+	<li class=fragment>Clean <b>water</b></li>
+	<li class=fragment><b>Biodiversity</b></li>
+	<li class=fragment><b>Peace</b></li>
+	</ul>
+<br>&nbsp;
+	<div class=fragment>
+<img class="plain" src="gfx/sdg6.png" width="100" height="auto">
+<img class="plain" src="gfx/sdg13.png" width="100" height="auto">
+<img class="plain" src="gfx/sdg14.png" width="100" height="auto">
+<img class="plain" src="gfx/sdg15.png" width="100" height="auto">
+<img class="plain" src="gfx/sdg16.png" width="100" height="auto">
+	</div>
+</section>
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3>The Public Good Game</h3>
+
+<p><b>PGG</b> = simple description of a system with a public good</p>
+<ul>
+<li class=fragment>Each player gets the same endowment (eg. 100 €)</li>
+<li class=fragment>He/she can decide <b>secretly</b> how much of that he/she wants to <b>invest</b> in a PG</li>
+<li class=fragment>They pay that amount in a pool and keep the rest </li>
+<li class=fragment>The pool gets multiplied by an <b>enhancement factor</b> <br>(e.g. 1.5)</li>
+<li class=fragment>The pool gets divided evenly among <b>all players</b>, even those who did not contribute</li>
+
+</ul>
+
+</section>
+
+
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3>PGG - What could happen</h3>
+<ul>
+
+
+
+<div class= fragment> <li> <b>Nobody</b> invests anything</li></div>
+<div class= fragment><ul> <li>Every player keeps 100 €</li></ul></div>
+
+<div class= fragment> <li> <b>All players</b> invest everything</li></div>
+<div class= fragment><ul> <li>Every player gets 150 €</li></ul></div>
+
+
+<div class= fragment> <li> Something <b>in-between</b></li></div>
+<div class= fragment><ul> <li>Depending on the investments all players <b>could</b> profit</li></div>
+<div class= fragment><ul> <li>Players who <b>invested more</b> will <b>profit less</b></li></ul></div>
+</ul>
+
+</section>
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+	<h3>The Public Good Game</h3>
+<img class="plain" src="gfx/pgg.png" width="66%" height="auto">
+
+
+</section>
+
+
+
+<section data-background="gfx/footer.png" data-background-size= contain >
+<h3> PGG - What will happen </h3>
+<ul>
+<li> Assumption: People want to <b>maximize</b> their profit</li>
+<li> Investigate using <b>Game Theory</b> </li>
+</ul>
+
+<table class = fragment style="border: 4px solid gray">
+
+	<tr class=fragment> <th>Decision of others</th><th>My decision </th></tr>
+	<tr class=fragment> <td style="text-align:left;">Everybody else <b>cooperates</b></td><td class=fragment>More profit if I <b>defect</b> </td></tr>
+	<tr class=fragment> <td style="text-align:left;">Everybody else <b>defects</b></td><td class=fragment>More profit if I <b>defect</b> </td></tr>
+	<tr class=fragment> <td style="text-align:left;">Something in-between</td><td class=fragment>More profit if I <b>defect</b> </td></tr>
+
+</table>
+
+<p class=fragment>This is called <b>tragedy of the commons</b>!</p>
+</section>
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3> Suitable for ABM?</h3>
+
+<p>Is this version of the PGG <b>suitable</b> for ABM?</p>
+<p class= fragment> <b>No!</b></p>
+<p class = fragment> The decision of the agents does <b>not depend on interactions</b> but is predetermined by the game. </p>
+
+</section>
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3>PGG - Experiments</h3>
+<ul>
+<li>From Game Theory we learned, that defection of everybody is the only stable state</li>
+<li> <b>However</b>, if we do experiments we see different results</li>
+<li> Sometimes people cooperate in the PGG, even though it does not maximize their profit</li>
+<li> There must be <b>more</b> to human behavior</li>
+</ul>
+<br>&nbsp
+<p style=" margin: 0px 0;  line-height: 0.4;"><a href="https://www.sciencedirect.com/science/article/pii/S0165176501003949" style="font-size: medium; ">Fischbacher et. al. 2001: Are people conditionally cooperative? Evidence from a public goods experiment</a><br>
+<a href="https://www.pnas.org/content/108/29/11825.short" style="font-size: medium; ">Tavoni et. al. 2011: Inequality, communication, and the avoidance of disastrous climate change in a public goods game</a><br>
+<a href="https://www.pnas.org/content/103/11/3994?eaf=" style="font-size: medium;">Milinksi et. al. 2006: Stabilizing the Earth’s climate is not a losing game: Supporting evidence from public goods experiments</a></p>
+<br>
+<p style=" margin: 0px 0;  line-height: 0.4; font-size:medium;">We can also do <a href="gfx/exp.png" style="font-size: medium;">our own experiment!</a> </p>
+
+</section>
+
+<section data-background="gfx/footer.png" data-background-size= contain >
+
+
+		<h3> PGG - Decision influence</h3>
+
+	What could be other <b>influencing factors</b> in the decision to contribute to a PG?
+
+  <p class=fragment> <b>Social Pressure</b> </p>
+		<p class=fragment> <b>Altruism</b> </p>
+		<p class=fragment> <b>Hope to influence others</b> </p>
+
+
+
+
+	</section>
+
+
+
+
+<section data-markdown data-background="gfx/footer.png" data-background-size= contain >
+### Social Pressure
+
+- People might decide to cooperate based on their **peers**
+- Simplified: Each time step you have a chance to **change your behavior** to the behavior of one of your peers
+- Now the dynamic is determined by interaction
+- This is **well suited** for ABM
+
+</section>
+
+
+
+
+<section  data-background="gfx/footer.png" data-background-size= contain >
+<h3>Outline</h3>
+
+
+<p><img class= "plain" style="vertical-align:middle" src="gfx/agent.png" height="50" width="auto"> Recap: Agent-based modeling </p>
+
+<p> <img class= "plain" style="vertical-align:middle" src="gfx/earth.png" height="50" width="auto"> Stable Climate as a Public Good Game </p>
+
+<p class = "fragment grow"> <img class= "plain" style="vertical-align:middle" src="gfx/abm.png" height="50" width="auto"> <b>Making a Public Good Game Model</b> </p>
+
+</section>
+
+
+
+<section data-markdown  data-background="gfx/footer.png" data-background-size= contain >
+### Model Scope
+
+- We want to model the public good game
+- **But:** decision based on social pressure
+- People are in a social network
+- Mixed starting population (e.g. 50-50)
+- Every time step: people can **adopt** the decision of someone close to them
+
+</section>
+
+<section   data-background="gfx/footer.png" data-background-size= contain >
+<h3>Results</h3>
+
+<iframe src="http://www.jaeger-ge.org/allcoop.mp4" width=600 height=400></iframe>
+
+</section>
+
+<section   data-background="gfx/footer.png" data-background-size= contain >
+	<h3>Results</h3>
+
+	<iframe src="http://www.jaeger-ge.org/alldefect.mp4" width=600 height=400></iframe>
+
+	</section>
+
+
+
+
+<section  data-background-iframe="http://www.jaeger-ge.org/pgg.html"  data-background-interactive >
+<!--<h3>The model</h3>-->
+
+
+
+</section>
+
+<!---<section data-background-iframe="http://www.jaeger-ge.org/pggtry.mp4" data-background-interactive>
+
+
+</section>-->
+
+<section data-markdown  data-background="gfx/footer.png" data-background-size= contain >
+### Next week
+
+- If a system can tip into one of several stable states, this is is called **bifurcation**
+- Interesting to investigate:
+    - tipping point [(Hofer, Jäger, Füllsack, 2018)](https://www.aimsciences.org/article/doi/10.3934/jdg.2018014)
+    - early warning signals [(Jäger &amp Füllsack, 2017)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189853)
+    - how to influence in which direction the system will tip
+
+This will be the topic of next week's lecture.
+</section>
+
+<section data-markdown  data-background="gfx/footer.png" data-background-size= contain >
+### Summary
+
+What we learned today
+- How is Public Good related to **sustainability**?
+- Recap: **Agent based modeling**
+- What is the **Public Good Game**?
+- What is the **tragedy of the commons**?
+- Which variants of the PGG are **suitable/unsuitable** for agent-based modeling?
+
+</section>
+
+<section data-markdown data-background="gfx/footer.png" data-background-size= contain >
+### Try at home
+
+Things to try out at home:
+
+ - Use the model to investigate at what number of defectors the chances of full cooperation become negligible
+ - Take the [**Quiz via Moodle**](./gfx/quiz.png)
+ - Look at a more complex model of [**a sustainability PGG**](http://www.jaeger-ge.org/pgg_sus.html)
+ - Literature:
+  - [Axelrod: The complexity of Cooperation](https://en.wikipedia.org/wiki/The_Complexity_of_Cooperation)
+  - [Milinski et. al: Stabilizing the Earth’s climate is not a losing game](https://www.pnas.org/content/103/11/3994?eaf=)
+
+
+</section>
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+				slideNumber: false,
+				pdfSeparateFragments: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transistionSpeed: 'fast',
+				navigationMode: 'linear',
+				backgroundTransition: 'slide',
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

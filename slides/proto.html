@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Slides</title>
+
+		<meta name="description" content="Slides">
+		<meta name="author" content="Georg Jäger">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!--<link rel="stylesheet" href="css/theme/black.css" id="theme">-->
+		<!--<link rel="stylesheet" href="css/theme/white.css" id="theme">-->
+	  <!--<link rel="stylesheet" href="css/theme/simple.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/gj.css" id="theme">
+		<!--<link rel="stylesheet" href="css/theme/serif.css" id="theme">-->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background = "gfx/style_title.jpg">
+
+				</section>
+
+
+					<section data-markdown  data-background = "gfx/footer.jpg" data-background-size = auto auto>
+### TITEL
+
+
+
+
+					</section>
+
+					<section   id ="fragments" data-background = "gfx/footer.jpg" data-background-size = auto auto>
+					<h3>Fragen stellen</h3>
+
+					<p>In so einer Folien kann ich eine <b>Frage</b> stellen</p>
+
+					<p class = "fragment"> Die erst <b>JETZT</b> beantwortet wird </p>
+
+					</section>
+
+					<section>
+							<section data-markdown data-background = "gfx/footer.jpg" data-background-size = auto auto>
+					### Komplizierteres Thema
+
+					Manchmal gibt es Theman, wo man [mehr Folien]() braucht
+
+					Hier kommen einige Punkte
+
+					und der rest der Punkte kommt dann darunter in der nächsten Folie
+         	</section>
+
+					<section data-markdown data-background = "gfx/footer.jpg" data-background-size = auto auto>
+			### Komplizierteres Thema 2
+
+			das Thema geht hier weiter
+
+			und noch weiter
+
+			und dann auf der nächsten Folie
+			</section>
+
+			<section data-markdown data-background = "gfx/footer.jpg" data-background-size = auto auto>
+	### Komplizierteres Thema 3
+
+- Nach drei Folien sollte alles klar sein
+
+- sonst kann man einfach mehr machen
+
+- Jetzt gehts aber wieder nach rechts weiter
+	</section>
+
+	</section>
+
+<section data-background = "gfx/footer.jpg" data-background-size = auto auto>
+
+	<h3>Abschlussfolie</h3>
+
+		<p>Und das ist schon der Schluss der Demo</p>
+
+		<p>war sehr einfach zu schreiben, schneller als in Latex</p>
+
+		<p>Ich kann zwischen den Punkten einfach enter machen</p>
+
+		<p>und brauch kein</p>
+
+		<pre><code class="tex">
+		\begin{itemize}
+		\item punkt {\color{green}a}
+		\item punkt b
+		\item punkt c
+		\end{itemize}
+	</code></pre>
+			</section>
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: false,
+				hash: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				transistionSpeed: 'fast',
+				navigationMode: 'linear',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
